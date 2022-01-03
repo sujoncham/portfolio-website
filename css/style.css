@@ -53,6 +53,8 @@ body {
 .header-menu li a{
 	padding: 10px;
 	color: #fff;
+	text-transform: uppercase;
+	transition: all ease 0.3s;
 }
 .header-menu li a:hover{
 	background: #800080;
@@ -162,6 +164,5 @@ body {
 
 .footer-link:hover{
 	color: #ce30ce;
-	color: #fff;
 	text-decoration: underline;
 }
