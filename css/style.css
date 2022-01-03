@@ -36,6 +36,11 @@ body {
     font-weight: 700;
 }
 
+.menu .logo:hover{
+	color: #ce30ce;
+
+}
+
 .header-menu{
 	display: flex;
 	justify-content: space-between;
@@ -66,6 +71,10 @@ body {
 .slide-text h2{
 	font-size: 40px;
 	text-transform: uppercase;
+}
+
+.slide-text h1{
+	color: #fff;
 }
 
 .about{
@@ -144,4 +153,15 @@ body {
 	color: #fff;
 	text-align: center;
 	font-size: 25px;
+}
+
+.footer-link{
+	color: #800080;
+	text-decoration: none;
+}
+
+.footer-link:hover{
+	color: #ce30ce;
+	color: #fff;
+	text-decoration: underline;
 }
