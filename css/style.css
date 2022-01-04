@@ -98,8 +98,25 @@ body {
 	width: 50%;
     border: 12px solid #800080;
     border-radius: 50%;
+    box-shadow: 2px 0px 9px 7px #ce30ce;
 }
 
+
+.about-heading h2{
+	color: #800080;
+    text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+.about-heading h4{
+	color: #ce30ce;
+	margin-bottom: 10px;
+	font-weight: 400;
+}
+
+.about-innertext{
+	margin-bottom: 15px;
+}
 .about-image{
 	width: 50%;
 }
@@ -123,6 +140,9 @@ body {
 
 .social-link{
 	margin-bottom: 20px;
+}
+.social-link a{
+	margin: 0px 12px 0px 0px;
 }
 
 .social-link i{
@@ -151,7 +171,10 @@ body {
 
 .heading-title{
 	text-align: center;
-    margin-bottom: 30px;
+	margin-bottom: 30px;
+}
+
+.heading-title h2{
     text-transform: uppercase;
 }
 
@@ -162,6 +185,10 @@ body {
     margin-bottom: 20px;
     padding: 10px;
     box-shadow: 5px 2px 8px 3px #ce30ce;
+}
+
+.area h2{
+	color: #ce30ce;
 }
 
 .area h2, h5{
