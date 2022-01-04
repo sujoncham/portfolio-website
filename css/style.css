@@ -211,11 +211,11 @@ body {
 }
 
 .hero-title{
-	color: #ce30ce;
+	color: #dad;
 	text-decoration: none;
 }
 
 .hero-title:hover{
-	color: #dad;
+	color: #fff;
 	text-decoration: underline;
 }
