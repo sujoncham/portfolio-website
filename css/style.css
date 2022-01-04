@@ -80,6 +80,10 @@ body {
 	color: #fff;
 }
 
+.slide-text h4{
+	margin-bottom: 20px;
+}
+
 .slide-img img{
 	box-shadow: 5px 2px 8px 3px #ce30ce;
 }
