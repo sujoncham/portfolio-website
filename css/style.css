@@ -93,7 +93,12 @@ body {
 }
 
 .about{
-	margin: 60px;
+	padding: 60px;
+	background-image: url("img/bg.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	
 }
 
 .about-innter{
