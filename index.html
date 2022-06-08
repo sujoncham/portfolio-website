@@ -105,7 +105,7 @@
                </div>
             </div>
             <div class="col-md-6">
-               <img class="w-100" src="img/profile.png" alt="">
+               <img class="w-75" src="img/profile.png" alt="">
             </div>
          </div>
       </div>
@@ -278,14 +278,22 @@
                </div>
             </div>
             <div class="col-md-6">
-               <form>
+               <form method="post" action="send-email.php" name="myemailform">
+                  <div class="mb-3">
+                     <label for="name" class="form-label">Your Name</label>
+                     <input type="text" class="form-control" name="name" placeholder="your email">
+                  </div>
+
                   <div class="mb-3">
                      <label for="email" class="form-label">Your Email</label>
-                     <input type="email" class="form-control" id="email" placeholder="your email">
+                     <input type="email" class="form-control" name="email" placeholder="your email">
                   </div>
                   <div class="mb-3">
                      <label for="message" class="form-label">Your Message</label>
-                     <textarea class="form-control" id="message" rows="3" placeholder="your message"></textarea>
+                     <textarea class="form-control" name="message" rows="3" placeholder="your message"></textarea>
+                  </div>
+                  <div class="mb-3">
+                     <button type="submit" class="btn btn-primary">Submit</button>
                   </div>
                </form>
             </div>
