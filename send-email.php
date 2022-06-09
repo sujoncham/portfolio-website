@@ -1,21 +1,21 @@
-<?php
-if(!isset($_POST['submit'])){
-    echo 'error, you need to submit form!';
-}
-$name = $_POST['name'];
-$email = $_POST['email'];
-$message = $_POST['message'];
+<?php 
+if(isset($_POST['submit'])){
+    $to = "sojonchambugong@gmail.com"; // this is your Email address
+    $from = $_POST['email']; // this is the sender's Email address
+    $first_name = $_POST['fname'];
+    $last_name = $_POST['lname'];
 
-if(empty($name) || empty($email)){
-    echo 'Name and Email are mandatory!';
-    exit;
-}
+    
+    $subject = "Form submission";
+    $subject2 = "Copy of your form submission";
+    $message = $fname . " " . $lname . " wrote the following:" . "\n\n" . $_POST['message'];
+    $message2 = "Here is a copy of your message " . $fname . "\n\n" . $_POST['message'];
 
-$email_from = 'sojonchambugong@gmail.com';
-$email_subject = 'New Form submission';
-$email_body = 'you have received a new message from the user $name.\n'. 'email address: $email\n'. 
-    'Here is the message:\n $message'. 
-$to = 'sojonchambugong@gmail.com';
-$headers = 'From : $email_from \r\n';
-
-mail($to, $email_subject, $email_body, $headers);
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+    mail($to,$subject,$message,$headers);
+    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+    echo "Mail Sent. Thank you " . $fname . ", we will contact you shortly.";
+    // You can also use header('Location: thank_you.php'); to redirect to another page.
+    }
+?>
