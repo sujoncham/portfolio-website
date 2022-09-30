@@ -20,11 +20,25 @@ body {
   border-radius: 25px;
 }
 
+.item:hover {
+  border: 1px solid #1f1e1e;
+}
+
 .item img {
   height: 230px;
+  border-radius: 25px;
 }
 
 .skills img {
   width: 80px;
   height: 120px;
+}
+
+.menubar li .active {
+  border-radius: 8px;
+}
+
+.card-body a:hover {
+  background-color: #1f1e1e;
+  color: #fff;
 }
